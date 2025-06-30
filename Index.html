@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <title>Spotify-Web player for everyone</title>
+    <title>Spotify - Web player: Music for everyone</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./Assets/logo.png">
@@ -43,9 +43,69 @@
                 </div>
                 <div class="scroll-left">
                     <div class="scroll-left-head">
-                        <<<icon here>>>
-                            <div class="scroll-left-recents">Recents </div>
-
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div id="recent">
+                            <p>Recent &nbsp;</p>
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="scroll-left-artist">
+                        <div class="artist">
+                            <img src="Assets/arijit.jpeg">
+                            <div class="artist-detail">
+                                <h5 style="height: 2px;">Arijit Singh</h5>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="artist">
+                            <img src="Assets/asake.jpg">
+                            <div class="artist-detail">
+                                <h5 style="height: 2px;">Asake</h5>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="artist">
+                            <img src="Assets/billie.jpeg">
+                            <div class="artist-detail">
+                                <h5 style="height: 2px;">Billie Elish</h5>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="artist">
+                            <img src="Assets/ariana.jpeg">
+                            <div class="artist-detail">
+                                <h5 style="height: 2px;">Ariana</h5>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="artist">
+                            <img src="Assets/drake.jpg">
+                            <div class="artist-detail">
+                                <h5 style="height: 2px;">Drake</h5>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="artist">
+                            <img src="Assets/ed.jpeg">
+                            <div class="artist-detail">
+                                <h5 style="height: 2px;">Ed Shereen</h5>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="artist">
+                            <img src="Assets/weekend.jpeg">
+                            <div class="artist-detail">
+                                <h5 style="height: 2px;">The Weelend</h5>
+                                <p>Artist</p>
+                            </div>
+                        </div>
+                        <div class="artist">
+                            <img src="Assets/taylor.jpeg">
+                            <div class="artist-detail">
+                                <h5 style="height: 2px;">Taylor Swift</h5>
+                                <p>Artist</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,20 +115,40 @@
         <div class="main-content"> shayd</div>
         <div class="music-detail">bola tha</div>
         <div class="music-player">
-            <div class="curr-song-img">
+            <div class="left">
                 <img src="./Assets/card1img.jpeg">
             </div>
-            <div class="curr-song-data">
-                Guzaarishein<br>(From parwarish)
+            <div id="music-info">
+                <h4>Guzaarishein</h4>
+                <p>(From parwarish)</p>
             </div>
-            <div class="music-control">
-                <img src="./Assets/player_icon1.png">
-                <img src="./Assets/player_icon4.png">
-                <img src="./Assets/player_icon3.png" style="height:30px;width:30px;">
-                <img src="./Assets/player_icon4.png">
-                <img src="./Assets/player_icon5.png">
+            <div class="center">
+                <div id="up">
+                    <button>
+                    <img src="./Assets/player_icon1.png">
+                </button>
+                    <button>
+                    <img src="./Assets/player_icon4.png">
+                </button><button>
+                    <img src="./Assets/player_icon3.png" style="width: 30px; height: 30px;">
+                </button><button>
+                    <img src="./Assets/player_icon4.png">
+                </button><button>
+                    <img src="./Assets/player_icon5.png">
+                </button>
+                </div>
+                <div id="down">
+                    <input type="range" id="slider">
+                </div>
             </div>
-            <div class="extra">
+            <div class="right">
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-pencil"></i>
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" class="volume-slider">
+                <i class="fa-solid fa-window-restore"></i>
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
 
             </div>
         </div>

@@ -97,11 +97,48 @@ body {
 }
 
 .scroll-left {
-    border: 1px solid white;
     background-color: rgb(20, 20, 20);
     overflow: auto;
     height: 397px;
     border-radius: 0rem 0rem 0.4rem 0.4rem;
+}
+
+.scroll-left-head {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    align-items: center;
+}
+
+.scroll-left-head #recent {
+    display: flex;
+    align-items: center;
+}
+
+.scroll-left-head #recent p {
+    font-size: smaller;
+}
+
+.scroll-left-head .fa-light {
+    width: 20px;
+    height: 20px;
+}
+
+.scroll-left-artist .artist {
+    display: flex;
+    align-items: center;
+}
+
+.scroll-left-artist .artist p {
+    font-size: small;
+}
+
+.scroll-left-artist .artist img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin: 9px;
 }
 
 .main-content {
@@ -122,32 +159,60 @@ body {
 
 .music-player {
     background-color: black;
-    border: 2px solid red;
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     height: 85px;
     display: flex;
-    /* padding: 0.2rem; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
 }
 
-.music-player .curr-song-img img {
-    margin-left: 0.2rem;
-    margin-top: 0.2rem;
-    height: 80px;
-}
-
-.curr-song-data {
-    margin-top: 20px;
-}
-
-.music-control {
+.music-player .left {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.music-player .music-control img {
+.music-player .left img {
+    width: 70px;
+    height: 70px;
+    border-radius: 0.5rem;
+    /* margin-right: 10px; */
+}
+
+
+/* .music-player .left #music-info {
+    margin-left: -20px;
+} */
+
+.music-player .center #up {
+    margin-left: 25%;
+    margin-bottom: 0.5rem;
+}
+
+.music-player .center #up button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.music-player .center #up button img {
     width: 20px;
     height: 20px;
-    align-self: center;
-    margin: 1rem;
+}
+
+.music-player .center #down #slider {
+    width: 500px;
+}
+
+.music-player .right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 2rem;
+    border: none;
+    cursor: pointer;
 }
