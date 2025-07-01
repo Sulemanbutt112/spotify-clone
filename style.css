@@ -58,16 +58,32 @@ body {
 .non-scroll-left {
     background-color: rgb(20, 20, 20);
     width: 100%;
-    height: 6rem;
-    box-shadow: 0px 8px 8px -8px black;
+    height: 7rem;
     overflow: hidden;
     border-radius: 0.4rem 0.4rem 0rem 0rem;
 }
 
 #non-scroll-part1 {
     display: flex;
-    padding: 0px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
     margin-left: 1rem;
+}
+
+#non-scroll-icons span {
+    background-color: transparent;
+    padding: 10px;
+    /* border-radius: 10rem; */
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#non-scroll-icons span:hover {
+    background-color: #333;
+    cursor: pointer;
 }
 
 #non-scroll-icons {
@@ -75,13 +91,14 @@ body {
     width: 20%;
     justify-content: space-between;
     align-self: end;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
 }
 
 #no-scroll-part2 {
     display: flex;
     justify-content: space-evenly;
+    border: 1px solid red;
 }
 
 #non-scroll-part2 .btn {
@@ -131,6 +148,10 @@ body {
 .scroll-left-artist .artist {
     display: flex;
     align-items: center;
+}
+
+.artist:hover {
+    background-color: #333;
 }
 
 .scroll-left-artist .artist p {
@@ -189,8 +210,12 @@ body {
     height: 4rem;
 }
 
+#icons span i:hover {
+    transform: scale(1.07);
+}
+
 .center-main #fix-header {
-    background-color: rgba(41, 41, 41, 1);
+    background-color: rgba(20, 20, 20, 0.8);
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem;
     width: 100%;
@@ -212,6 +237,10 @@ body {
     cursor: pointer;
 }
 
+#fix-header button:hover {
+    transform: scale(1.07);
+}
+
 .my-cards {
     display: flex;
     overflow-x: auto;
@@ -225,7 +254,19 @@ body {
 }
 
 .card {
-    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    width: 180px;
+    height: 210px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    background-color: #333;
 }
 
 .card img {
